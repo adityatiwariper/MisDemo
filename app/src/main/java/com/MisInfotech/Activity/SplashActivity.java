@@ -46,7 +46,7 @@ public class SplashActivity extends AppCompatActivity  {
             public void run() {
                 checkPermissions();
             }
-        }, 5000);
+        }, 3000);
     }
 
     @Override

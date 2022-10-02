@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+
+    <RelativeLayout
+        android:id="@+id/rlImage1"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_margin="10dp"
+        android:layout_weight="1"
+        android:background="#DAE3EA"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/ivphoto"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="fitXY"/>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/lldetail_one"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@+id/rlImage1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="20dp"
+        android:padding="10dp"
+        android:weightSum="2">
+
+        <TextView
+            android:id="@+id/tvnotes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:layout_centerHorizontal="true"
+            android:textSize="20sp"
+            android:text="Notes"/>
+        <TextView
+            android:id="@+id/tvNotes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:layout_marginStart="20dp"
+            android:layout_centerHorizontal="true"
+            android:textSize="20sp"
+            android:text="Edit Your Name"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/lldetail_two"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@+id/lldetail_one"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="20dp"
+        android:padding="10dp"
+        android:weightSum="2">
+
+        <TextView
+            android:id="@+id/tvdes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:layout_centerHorizontal="true"
+            android:textSize="20sp"
+            android:text="Description"/>
+        <TextView
+            android:id="@+id/tvdescription"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:layout_marginStart="20dp"
+            android:layout_centerHorizontal="true"
+            android:textSize="20sp"
+            android:text="Time"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/lldetail_three"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@+id/lldetail_two"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="20dp"
+        android:padding="10dp"
+        android:weightSum="2">
+
+        <TextView
+            android:id="@+id/tvDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:layout_centerHorizontal="true"
+            android:textSize="20sp"
+            android:text="Date"/>
+        <TextView
+            android:id="@+id/tvdate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:layout_marginStart="20dp"
+            android:layout_centerHorizontal="true"
+            android:textSize="20sp"
+            android:text="Date"/>
+
+    </LinearLayout>
+
+
+
+
+</RelativeLayout>

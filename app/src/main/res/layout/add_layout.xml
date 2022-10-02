@@ -2,20 +2,26 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:tools="http://schemas.android.com/tools"
-    tools:context=".Activity.MainActivity"
     android:background="@color/white">
 
     <TextView
         android:id="@+id/tvHeading"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
-        android:text="@string/notes"
         android:textColor="@color/black"
-        android:textSize="20sp" />
+        android:layout_centerHorizontal="true"
+        android:textSize="20sp"
+        android:text="@string/notes"/>
 
 
+
+    <ImageView
+        android:id="@+id/upload"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvHeading"
+        android:layout_centerHorizontal="true"
+        android:src="@mipmap/ic_launcher" />
 
 
     <LinearLayout
@@ -25,7 +31,7 @@
         android:layout_marginTop="10dp"
         android:layout_marginStart="20dp"
         android:layout_marginEnd="20dp"
-        android:layout_below="@+id/tvHeading"
+        android:layout_below="@+id/upload"
         android:background="@drawable/boder"
         android:elevation="5dp"
         android:paddingStart="10dp"
@@ -44,11 +50,36 @@
 
     </LinearLayout>
 
+    <LinearLayout
+        android:id="@+id/llEdit_two"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_below="@+id/llEdit"
+        android:background="@drawable/boder"
+        android:elevation="5dp"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp">
+
+        <EditText
+            android:id="@+id/etDescription"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@android:color/transparent"
+            android:hint="Enter Description"
+            android:imeOptions="actionNext"
+            android:inputType="textEmailAddress"
+            android:textSize="15sp"
+            android:textColor="@color/black" />
+
+    </LinearLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/llEdit"
+        android:layout_below="@+id/llEdit_two"
         android:padding="10dp"
         android:orientation="horizontal"
         android:weightSum="2">
